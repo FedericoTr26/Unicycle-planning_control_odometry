@@ -6,12 +6,12 @@
 
 A simulation study of a unicycle mobile robot, from generating a feasible point-to-point trajectory to tracking a figure-eight path and reaching a target pose with odometric feedback.
 
-## My contribution
+## Implementation
 
-- Implemented Cartesian cubic path planning and a cubic time law. Rescaled the motion duration to meet linear and angular velocity limits while preserving the path geometry.
-- Built an input–output linearization controller around a virtual point ahead of the robot and compared four offsets from the robot center.
-- Compared a controller based on approximate linearization with an almost-nonlinear controller on Bernoulli lemniscates with scale parameters **3 and 30**. Both controllers used the same initial pose within each comparison.
-- Combined a polar pose regulator with second-order Runge–Kutta odometry to close the loop on the estimated pose.
+- The planner uses a Cartesian cubic path and a cubic time law. The motion duration was rescaled to meet linear and angular velocity limits while preserving the path geometry.
+- An input–output linearization controller was built around a virtual point ahead of the robot. The comparison covered four offsets from the robot center.
+- The comparison evaluated approximate linearization and almost-nonlinear control on Bernoulli lemniscates with scale parameters **3 and 30**. Each comparison used the same initial pose for both controllers.
+- A polar pose regulator was combined with second-order Runge–Kutta odometry to close the loop on the estimated pose.
 
 ## Tools
 
@@ -19,7 +19,7 @@ MATLAB, Simulink, and the Robotics System Toolbox unicycle model.
 
 ## Run
 
-Set MATLAB's current folder to the task you want to run and open the corresponding script below. Keep each script alongside its Simulink models. In Task 3, set `caso = 1` for scale 3 or `caso = 2` for scale 30. Each run samples a new initial pose and generates the reference data it needs.
+Set MATLAB's current folder to the relevant task folder and open the corresponding script below. Keep each script alongside its Simulink models. In Task 3, set `caso = 1` for scale 3 or `caso = 2` for scale 30. Each run samples a new initial pose and generates the reference data it needs.
 
 ## Key results
 
