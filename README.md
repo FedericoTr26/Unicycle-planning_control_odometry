@@ -19,7 +19,7 @@ MATLAB, Simulink, and the Robotics System Toolbox unicycle model.
 
 ## Run
 
-Set MATLAB's current folder to the exercise you want to run. Keep each script alongside its Simulink models. For the lemniscate comparison, set `caso = 1` for scale 3 or `caso = 2` for scale 30 in the comparison script. Each run samples a new initial pose.
+Set MATLAB's current folder to the task you want to run and open the corresponding script below. Keep each script alongside its Simulink models. In Task 3, set `caso = 1` for scale 3 or `caso = 2` for scale 30. Each run samples a new initial pose and generates the reference data it needs.
 
 ## Key results
 
@@ -41,5 +41,7 @@ The dashed line is the reference trajectory. The position-error plots below make
 ## Project files
 
 - [Technical report](unicycle-motion-planning-control-and-odometry.pdf)
-- [Cubic path planning](Esercizio%201/es_1_main.m) and [input–output linearization](Esercizio%202/es_2_main.m)
-- [Lemniscate tracking comparison](Esercizio%203/es_3_main_definitivo_conPlot.m) and [pose regulation with odometry](Esercizio%204/es_4_main.m)
+- [Task 1 · Cubic path planning](Task%201/es_1_main.m)
+- [Task 2 · Input–output linearization](Task%202/es_2_main.m) · [Simulink model](Task%202/modello_es_2.slx)
+- [Task 3 · Lemniscate tracking comparison](Task%203/es_3_main_definitivo_conPlot.m) · [Linear controller model](Task%203/es_3_model_linear.slx) · [Almost-nonlinear controller model](Task%203/es_3_model_almost_nonlinear.slx)
+- [Task 4 · Pose regulation with odometry](Task%204/es_4_main.m) · [Simulink model](Task%204/es_4_model.slx)
